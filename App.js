@@ -1,19 +1,17 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import "react-native-gesture-handler";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hola mund</Text>
-    </View>
+    <NavigationContainer style={styles.container}>
+      {/* Rest of your app code */}
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#F0F1F6",
   },
 });
