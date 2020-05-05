@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
-function TheButton(props) {
+function MyButton({ title }) {
   return (
     <View style={styles.button}>
-      <Text>hola</Text>
+      <Text>{title}</Text>
     </View>
   );
 }
@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
   button: {
     width: 100,
     height: 50,
-    backgroundColor: "red",
+    backgroundColor: "yellow",
     color: "black",
+    margin: "auto",
   },
 });
 
-export default TheButton;
+export default MyButton;
