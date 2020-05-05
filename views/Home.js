@@ -11,7 +11,9 @@ function homeView() {
           Antes de empezar dinos, cuales son tus actividades habituales diarias.
         </Text>
       </View>
-      <MyButton title="ayuda" width="50%" height="100%" />
+      <View style={styles.button}>
+        <MyButton title="Empezar" />
+      </View>
     </View>
   );
 }
@@ -24,17 +26,24 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   informationContainer: {
-    backgroundColor: "red",
     alignItems: "center",
     justifyContent: "center",
+    width: "80%",
+    height: "75%",
   },
   bigTitle: {
     color: "#5B5B5B",
     fontSize: 49,
+    marginBottom: 20,
   },
   description: {
     color: "#5B5B5B",
     fontSize: 22,
+    textAlign: "center",
+  },
+  button: {
+    width: "80%",
+    height: 55,
   },
 });
 
