@@ -1,8 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import MyButton from "../components/MyButton";
+import SelectDay from "./SelectDay";
 
-function homeView() {
+function homeView({ navigation }) {
+  function onClick() {
+    navigation.navigate("SelectDay");
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.informationContainer}>
@@ -11,7 +16,7 @@ function homeView() {
           Antes de empezar dinos, cuales son tus actividades habituales diarias.
         </Text>
       </View>
-      <View style={styles.button}>
+      <View style={styles.button} onStartShouldSetResponder={onClick}>
         <MyButton title="Empezar" />
       </View>
     </View>
