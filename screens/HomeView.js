@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import MyButton from "../components/MyButton";
 import SelectDay from "./SelectDay";
 
-function homeView({ navigation }) {
+function HomeView({ navigation }) {
   function onClick() {
     navigation.navigate("SelectDay");
   }
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default homeView;
+export default HomeView;
